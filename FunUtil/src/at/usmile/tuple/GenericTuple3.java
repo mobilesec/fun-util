@@ -1,5 +1,7 @@
 package at.usmile.tuple;
 
+import java.io.Serializable;
+
 /**
  * Holds 3 values of different type that should stick together. Perfect for returning a tuple of values which are of different
  * type.
@@ -14,7 +16,8 @@ package at.usmile.tuple;
  * @param <T2>
  * @param <T3>
  */
-public class GenericTuple3<T1, T2, T3> {
+public class GenericTuple3<T1, T2, T3> implements Serializable {
+	private static final long serialVersionUID = 1L;
 
 	// ================================================================================================================
 	// MEMBERS

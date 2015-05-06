@@ -1,11 +1,13 @@
 package at.usmile.tuple;
 
+import java.io.Serializable;
+
 /**
- * Holds 2 values of different type that should stick together. Perfect for returning a tuple of values which are of different
- * type.
+ * Holds 2 values of different type that should stick together. Perfect for
+ * returning a tuple of values which are of different type.
  * 
- * (being sick of creating classes just for handling multiple return values of different type - Java needs more functional
- * programming).
+ * (being sick of creating classes just for handling multiple return values of
+ * different type - Java needs more functional programming).
  * 
  * @author Rainhard Findling
  * @date 10 Jan 2014
@@ -13,7 +15,8 @@ package at.usmile.tuple;
  * @param <T1>
  * @param <T2>
  */
-public class GenericTuple2<T1, T2> {
+public class GenericTuple2<T1, T2> implements Serializable {
+	private static final long serialVersionUID = 1L;
 
 	// ================================================================================================================
 	// MEMBERS
